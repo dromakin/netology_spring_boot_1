@@ -10,7 +10,7 @@
  * version - 2023.08.06
  * copyright - ORGANIZATION_NAME Inc. 2023
  */
-package com.dromakin.netology_spring_boot_1.config;
+package com.dromakin.netology_spring_boot_1.model;
 
 public class DevProfile implements SystemProfile {
     @Override

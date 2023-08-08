@@ -12,7 +12,7 @@
  */
 package com.dromakin.netology_spring_boot_1.controllers;
 
-import com.dromakin.netology_spring_boot_1.config.SystemProfile;
+import com.dromakin.netology_spring_boot_1.model.SystemProfile;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
