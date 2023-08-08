@@ -12,6 +12,9 @@
  */
 package com.dromakin.netology_spring_boot_1.config;
 
+import com.dromakin.netology_spring_boot_1.model.DevProfile;
+import com.dromakin.netology_spring_boot_1.model.ProductionProfile;
+import com.dromakin.netology_spring_boot_1.model.SystemProfile;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,7 +25,8 @@ public class JavaConfig {
     @Bean
     @ConditionalOnProperty(
             value = "netology.profile.dev",
-            havingValue = "true"
+            havingValue = "true",
+            matchIfMissing = true
     )
     public SystemProfile getDevProfile() {
         return new DevProfile();
