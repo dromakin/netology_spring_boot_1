@@ -13,8 +13,10 @@
 package com.dromakin.netology_spring_boot_1.model;
 
 public class ProductionProfile implements SystemProfile {
+
+    public static final String msg = "Current profile is production";
     @Override
     public String getProfile() {
-        return "Current profile is production";
+        return msg;
     }
 }
